@@ -26,10 +26,18 @@ public class Chair extends Products implements Oferta{
         return Objects.hash(super.hashCode(), ruedas);
     }
 
+    private String texto(){
+        if(ruedas){
+            return "Si";
+        }else {
+            return "No";
+        }
+    }
+
     @Override
     public String toString() {
         return "Chair{"+super.toString()+
-                ", ruedas=" + ruedas +
+                ", ruedas=" + this.texto()+
                 '}';
     }
 
