@@ -39,11 +39,11 @@ public class Desk extends Products{
         return Objects.hash(super.hashCode(), height, length);
     }
 
-    @Override
+   @Override
     public String toString() {
         return "Desk{" +super.toString()+
                 ", height=" + height +
-                ", length=" + length +
-                '}';
+                " metros, length=" + length +
+                " metros}";
     }
 }
